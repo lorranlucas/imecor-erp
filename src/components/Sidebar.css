@@ -1,0 +1,91 @@
+/* Estilos da Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #343a40; /* Cor escura típica de sidebars */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease; /* Transição suave para o toggle */
+  }
+  
+  /* Sidebar fechada */
+  .sidebar.closed {
+    width: 80px;
+  }
+  
+  /* Logo e detalhes */
+  .logo-details {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo_name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sidebar.closed .logo_name {
+    display: none;
+  }
+  
+  .bx-menu {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Lista de navegação */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list p {
+    padding: 10px 20px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .menu-separator {
+    height: 1px;
+    background: #495057; /* Cinza escuro para separação */
+    margin: 5px 20px;
+  }
+  
+  /* Itens da lista */
+  .nav-list li {
+    padding: 10px 20px;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li a:hover {
+    color: #007bff; /* Azul do Bootstrap para hover */
+  }
+  
+  /* Ícones */
+  .nav-list .bx {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .sidebar.closed .links_name {
+    display: none; /* Esconde os nomes dos links quando fechada */
+  }
+  
+  /* Spacer */
+  .spacer {
+    height: 9%; /* Altura ajustável */
+    width: 10px;
+  }

@@ -1,0 +1,35 @@
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+  }
+  
+  .tablink {
+    background-color: #f8f9fa;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .tablink:hover {
+    background-color: #e9ecef;
+  }
+  
+  .tablink.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tab-content {
+    padding: 20px;
+  }
+  
+  .horizontal {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }

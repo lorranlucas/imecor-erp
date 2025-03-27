@@ -18,7 +18,7 @@ function Sidebar() {
         <li>
           <Link to="/">
             <i className="bx bx-grid-alt"></i>
-            <span className="links_name">Página inicial</span>
+            <span className="links_name">Pagina inicial</span>
           </Link>
         </li>
         <li>

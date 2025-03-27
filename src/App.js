@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
-import TabsComponent from './components/TabsComponent'; // Importe o componente de abas
+import TabsComponent from './pages/principal/cadastro/cadastro'; // Importe o componente de abas
 import './App.css';
 
 // Páginas fictícias para simular os blocos

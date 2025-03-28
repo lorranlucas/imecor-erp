@@ -55,7 +55,6 @@ const ModalMateriais = ({ isOpen, onRequestClose, item, onSave, fornecedores = [
     Espessura_perfil: item?.Espessura_perfil || '',
   });
 
-  
   const [imagePreview, setImagePreview] = useState(item?.imagem_material || '/icons/add-image.png');
 
   // Atualiza o código do material dinamicamente
@@ -87,8 +86,6 @@ const ModalMateriais = ({ isOpen, onRequestClose, item, onSave, fornecedores = [
   };
 
   const calcularMassa = () => {
-    // Implemente a lógica de cálculo de massa baseada nos campos
-    // Exemplo simplificado para barra redonda
     const { densidade, comprimento, diametro } = formData;
     if (densidade && comprimento && diametro) {
       const volume = Math.PI * Math.pow(diametro / 2, 2) * comprimento;
@@ -147,7 +144,7 @@ const ModalMateriais = ({ isOpen, onRequestClose, item, onSave, fornecedores = [
       <div className="modal-header">
         <h5 className="modal-title">{item ? 'Editar Material' : 'Cadastrar Material'}</h5>
         <button type="button" className="close" onClick={() => { resetForm(); onRequestClose(); }}>
-          <span>&times;</span>
+          <span>×</span>
         </button>
       </div>
       <div className="modal-body">
@@ -349,8 +346,6 @@ const ModalMateriais = ({ isOpen, onRequestClose, item, onSave, fornecedores = [
             </div>
           )}
 
-          {/* Adicione os outros campos específicos para cada geometria aqui */}
-          {/* Exemplo para Tubo Redondo */}
           {formData.geometria === 'tubo_redondo' && (
             <div className="form-row">
               <div className="form-group col-md-4">

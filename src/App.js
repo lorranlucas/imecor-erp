@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import TabsComponent from './pages/principal/cadastro/cadastro'; // Importe o componente de abas
+import ComercialTela from './pages/principal/comercial/comercial'; // Importe o componente de abas
+import OrcamentoTela from './pages/principal/orcamento/TabelaOrcamento'; // Importe o componente de abas
+
 import './App.css';
 
 // Páginas fictícias para simular os blocos
@@ -9,8 +12,8 @@ const Dashboard = () => <h2>Página Inicial</h2>;
 const GerenciamentoUsuarios = () => <h2>Gerenciamento de Usuários</h2>;
 const GerenciamentoGrupos = () => <h2>Gerenciamento de Grupos</h2>;
 const Cadastro = () => <TabsComponent />; // A página de cadastro será o TabsComponent
-const Orcamento = () => <h2>Orçamento</h2>;
-const Comercial = () => <h2>Comercial</h2>;
+const Orcamento = () => < OrcamentoTela />;
+const Comercial = () => < ComercialTela />;
 const ProducaoHome = () => <h2>Ordem de Serviço</h2>;
 const ProjetoList = () => <h2>Apontamento</h2>;
 const CadastrarNC = () => <h2>Não Conformidade</h2>;

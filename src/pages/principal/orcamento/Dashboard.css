@@ -1,0 +1,59 @@
+.margin-top {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .summ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .summ > div {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    min-width: 150px;
+    height: 100px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .summ > div {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .summ > div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  .large-span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 10px;
+  }

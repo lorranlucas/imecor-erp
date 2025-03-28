@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.horizontal {
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.summary h5 {
+  margin: 0 0 10px 0;
+}
+
+.table-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #333;
+  color: white;
+}
+
+.status {
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+}
+
+.on-time {
+  background-color: #28a745;
+}
+
+.overdue {
+  background-color: #dc3545;
+}
+
+.width50 {
+  max-width: 450px;
+}
+
+.summ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.summ > div {
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  min-width: 250px;
+  height: 140px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+.large-span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+canvas {
+  max-width: 300px;
+  max-height: 200px;
+  width: 300px;
+  height: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .summ > div {
+    flex: 1 1 45%;
+  }
+
+  .form-row .form-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .summ > div {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 800px;
+  }
+}

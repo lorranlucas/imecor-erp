@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
-import './ModalImpostos.css'; // Crie este arquivo para estilos personalizados, se necessário
 
 // Configuração necessária para acessibilidade
 Modal.setAppElement('#root');

@@ -1,0 +1,93 @@
+/* Estilos para as cores dos status */
+.status-comercial {
+    background-color: yellow;
+    color: black;
+  }
+  .status-aprovado {
+    background-color: blue;
+    color: white;
+  }
+  .status-rejeitado {
+    background-color: red;
+    color: white;
+  }
+  .status-concluido {
+    background-color: green;
+    color: white;
+  }
+  .status-badge {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  /* Dashboard Card Style */
+  .box_main {
+    margin: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .dashboard .cards {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    width: 23%;
+    min-width: 100px;
+  }
+  
+  .horizontal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .alinharL {
+    text-align: left;
+  }
+  
+  /* Estilo para os filtros */
+  .filters {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters .form-label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+  }
+  
+  .filters .form-select {
+    width: 150px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .dashboard .cards {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard .cards {
+      flex: 1 1 100%;
+    }
+  }
